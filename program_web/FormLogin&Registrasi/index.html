@@ -1,1 +1,57 @@
-
+<!DOCTYPE Html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registrasi</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <!--Form Login-->
+        <div id="loginForm">
+          <h2>Login</h2>
+          <form>
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" id="login-email" required>
+            </div>
+            <div class="input-group">
+              <label>Password</label>
+              <input type="password" id="login-password" required>
+            </div>
+            <button type="submit" class="btn">Masuk</button>
+          </form>
+          <p>Belum punya akun? <a href="#" onclick="showRegister()">Registrasi</a></p>
+        </div>
+        
+        <!--Form Registrasi-->
+        <div id="registerForm" class="hidden">
+          <h2>Registrasi</h2>
+          <form>
+            <div class="input-group">
+              <label>Nama Lengkap</label>
+              <input type="text" id="nama" required>
+            </div>
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="input-group">
+              <label>Password</label>
+              <input type="password" id="password" required>
+            </div>
+            <div class="input-group">
+              <label>Konfirmasi Password</label>
+              <input type="password" id="confirm-password" required>
+            </div>
+            <button type="submit" class="btn">Daftar</button>
+          </form>
+          <p>Sudah punya akun? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
